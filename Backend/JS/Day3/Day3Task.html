@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function createBankAccount(){
+    let balance=5000;
+  function checkBalance(){
+    console.log("AccountBalance:", balance);
+  }
+    return checkBalance;
+}
+ let balance1=100000;
+
+ let account = createBankAccount();
+ console.log("OutsideBalance:",balance1);
+ account();
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

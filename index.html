@@ -1,464 +1,437 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Programming Journey</title>
+    <title>JavaScript Tasks</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Tailwind Configuration -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    animation: {
-                        "float": "float 3s ease-in-out infinite",
-                    },
-                    keyframes: {
-                        float: {
-                            "0%, 100%": {
-                                transform: "translateY(0)"
-                            },
-                            "50%": {
-                                transform: "translateY(-6px)"
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 
-<body class="min-h-screen bg-slate-950 text-white">
 
-    <!-- ================= HEADER ================= -->
+<body class="min-h-screen bg-[#f8fafc] text-slate-900">
 
-    <header class="relative overflow-hidden border-b border-slate-800">
 
-        <!-- Background Glow -->
-        <div class="absolute -top-32 left-1/2 h-72 w-72 
-                    -translate-x-1/2 rounded-full 
-                    bg-blue-600/20 blur-3xl">
-        </div>
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
 
-        <div class="relative mx-auto max-w-7xl px-6 py-16 text-center">
+    <header class="border-b border-slate-200 bg-white">
 
-            <!-- Logo -->
-            <div class="mx-auto mb-5 flex h-16 w-16 
-                        items-center justify-center 
-                        rounded-2xl bg-blue-500/10 
-                        text-4xl ring-1 ring-blue-400/30">
-                💻
+        <div class="mx-auto max-w-7xl px-6 lg:px-10">
+
+            <div class="flex h-20 items-center justify-between">
+
+
+                <!-- LEFT -->
+
+                <div class="flex items-center gap-4">
+
+                    <!-- JavaScript Icon -->
+
+                    <div class="flex h-11 w-11 items-center
+                                justify-center rounded-lg
+                                bg-[#f7df1e]">
+
+                        <span class="text-xl font-black text-black">
+                            JS
+                        </span>
+
+                    </div>
+
+
+                    <!-- Language -->
+
+                    <div>
+
+                        <h1 class="text-lg font-bold tracking-tight">
+                            JavaScript
+                        </h1>
+
+                        <p class="text-xs font-medium text-slate-400">
+                            Programming Tasks
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+
+                <div class="hidden items-center gap-2 sm:flex">
+
+                    <span class="h-2 w-2 rounded-full bg-emerald-500">
+                    </span>
+
+                    <span class="text-xs font-medium text-slate-500">
+                        Learning
+                    </span>
+
+                </div>
+
+
             </div>
 
-            <!-- Heading -->
-            <h1 class="text-4xl font-extrabold tracking-tight 
-                       sm:text-5xl">
-                My Programming Journey
-            </h1>
-
-            <p class="mx-auto mt-4 max-w-2xl text-base 
-                      leading-7 text-slate-400 sm:text-lg">
-                A day-wise collection of my programming lessons,
-                tasks and practice programs.
-            </p>
-
-            <!-- Small Stats -->
-            <div class="mt-8 flex flex-wrap justify-center gap-4">
-
-                <div class="rounded-full border border-slate-700 
-                            bg-slate-900/70 px-5 py-2 text-sm 
-                            text-slate-300">
-                    📚 3 Learning Days
-                </div>
-
-                <div class="rounded-full border border-slate-700 
-                            bg-slate-900/70 px-5 py-2 text-sm 
-                            text-slate-300">
-                    ⚡ JavaScript
-                </div>
-
-                <div class="rounded-full border border-slate-700 
-                            bg-slate-900/70 px-5 py-2 text-sm 
-                            text-slate-300">
-                    🚀 Beginner Journey
-                </div>
-
-            </div>
-
         </div>
+
     </header>
 
 
-    <!-- ================= MAIN ================= -->
 
-    <main class="mx-auto max-w-7xl px-6 py-12">
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
 
-        <!-- Section Heading -->
+    <main class="mx-auto max-w-7xl px-6 py-12 lg:px-10">
 
-        <div class="mb-10 flex flex-col gap-3 
-                    sm:flex-row sm:items-end 
-                    sm:justify-between">
 
-            <div>
-                <p class="mb-2 text-sm font-semibold 
-                          uppercase tracking-widest text-blue-400">
-                    Learning Archive
-                </p>
+        <!-- PAGE HEADING -->
 
-                <h2 class="text-3xl font-bold">
-                    Programming Tasks
-                </h2>
+        <div class="mb-10">
 
-                <p class="mt-2 text-slate-400">
-                    Explore my programs day by day.
-                </p>
-            </div>
+            <p class="mb-2 text-xs font-bold uppercase
+                      tracking-[0.2em] text-slate-400">
+                Learning Path
+            </p>
 
-            <div class="text-sm text-slate-500">
-                03 Lessons Completed
-            </div>
+            <h2 class="text-3xl font-bold tracking-tight
+                       text-slate-900">
+                Daily Tasks
+            </h2>
 
         </div>
 
 
-        <!-- ================= CARDS ================= -->
 
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- =================================================
+             TASK GRID
+        ================================================== -->
+
+        <div class="grid gap-5 sm:grid-cols-2
+                    lg:grid-cols-3 xl:grid-cols-4">
 
 
-            <!-- ========== DAY 1 ========== -->
 
-            <article class="group relative overflow-hidden 
-                            rounded-3xl border border-slate-800 
-                            bg-slate-900 p-6 
-                            shadow-xl shadow-black/10 
-                            transition duration-300 
-                            hover:-translate-y-2 
-                            hover:border-blue-500/50 
-                            hover:shadow-blue-500/10">
+            <!-- =================================================
+                 DAY 01
+            ================================================== -->
 
-                <!-- Top Gradient -->
-                <div class="absolute inset-x-0 top-0 h-1 
-                            bg-gradient-to-r 
-                            from-blue-500 to-cyan-400">
+            <div class="group relative overflow-hidden
+                        rounded-2xl border border-slate-200
+                        bg-white
+                        transition-all duration-300
+                        hover:-translate-y-1
+                        hover:border-slate-300
+                        hover:shadow-[0_20px_40px_rgba(15,23,42,0.08)]">
+
+
+                <!-- TOP LINE -->
+
+                <div class="h-1 w-full bg-[#f7df1e]">
                 </div>
 
-                <!-- Icon + Day -->
 
-                <div class="mb-6 flex items-center 
-                            justify-between">
+                <div class="p-6">
 
-                    <div class="flex h-14 w-14 items-center 
-                                justify-center rounded-2xl 
-                                bg-blue-500/10 text-3xl 
-                                transition duration-300 
-                                group-hover:scale-110">
-                        ⚡
+
+                    <!-- DAY + ICON -->
+
+                    <div class="flex items-center
+                                justify-between">
+
+
+                        <!-- DAY NUMBER -->
+
+                        <div>
+
+                            <p class="text-[11px] font-bold
+                                      uppercase tracking-[0.2em]
+                                      text-slate-400">
+                                Day
+                            </p>
+
+                            <p class="mt-1 text-3xl font-black
+                                      tracking-tight text-slate-900">
+                                01
+                            </p>
+
+                        </div>
+
+
+                        <!-- ICON -->
+
+                        <div class="flex h-14 w-14 items-center
+                                    justify-center rounded-xl
+                                    bg-[#f7df1e]
+                                    shadow-sm">
+
+                            <span class="text-xl font-black text-black">
+                                JS
+                            </span>
+
+                        </div>
+
                     </div>
 
-                    <span class="rounded-full bg-blue-500/10 
-                                 px-3 py-1 text-xs font-semibold 
-                                 text-blue-400">
-                        DAY 01
-                    </span>
-
-                </div>
 
 
-                <!-- Content -->
+                    <!-- LANGUAGE -->
 
-                <h3 class="text-xl font-bold">
-                    JavaScript Fundamentals
-                </h3>
+                    <div class="mt-8">
 
-                <p class="mt-3 min-h-[72px] text-sm 
-                          leading-6 text-slate-400">
-                    Introduction to JavaScript, variables,
-                    data types, statements and basic programming
-                    concepts.
-                </p>
+                        <h3 class="text-lg font-bold text-slate-900">
+                            JavaScript
+                        </h3>
 
-
-                <!-- Topics -->
-
-                <div class="mt-5 flex flex-wrap gap-2">
-
-                    <span class="rounded-lg bg-slate-800 
-                                 px-3 py-1 text-xs text-slate-300">
-                        Variables
-                    </span>
-
-                    <span class="rounded-lg bg-slate-800 
-                                 px-3 py-1 text-xs text-slate-300">
-                        Data Types
-                    </span>
-
-                    <span class="rounded-lg bg-slate-800 
-                                 px-3 py-1 text-xs text-slate-300">
-                        Statements
-                    </span>
-
-                </div>
-
-
-                <!-- Divider -->
-
-                <div class="my-6 border-t border-slate-800">
-                </div>
-
-
-                <!-- Button -->
-
-                <a href="./Backend/JS/Day1/Day1Task.html"
-                   class="flex items-center justify-center 
-                          gap-2 rounded-xl bg-blue-600 
-                          px-5 py-3 text-sm font-semibold 
-                          text-white transition 
-                          hover:bg-blue-500 
-                          focus:outline-none 
-                          focus:ring-2 
-                          focus:ring-blue-500/50">
-
-                    View Day 1 Tasks
-
-                    <span class="transition 
-                                 group-hover:translate-x-1">
-                        →
-                    </span>
-
-                </a>
-
-            </article>
-
-
-            <!-- ========== DAY 2 ========== -->
-
-            <article class="group relative overflow-hidden 
-                            rounded-3xl border border-slate-800 
-                            bg-slate-900 p-6 
-                            shadow-xl shadow-black/10 
-                            transition duration-300 
-                            hover:-translate-y-2 
-                            hover:border-purple-500/50 
-                            hover:shadow-purple-500/10">
-
-                <!-- Top Gradient -->
-
-                <div class="absolute inset-x-0 top-0 h-1 
-                            bg-gradient-to-r 
-                            from-purple-500 to-pink-400">
-                </div>
-
-
-                <!-- Icon + Day -->
-
-                <div class="mb-6 flex items-center 
-                            justify-between">
-
-                    <div class="flex h-14 w-14 items-center 
-                                justify-center rounded-2xl 
-                                bg-purple-500/10 text-3xl 
-                                transition duration-300 
-                                group-hover:scale-110">
-                        🔄
                     </div>
 
-                    <span class="rounded-full bg-purple-500/10 
-                                 px-3 py-1 text-xs font-semibold 
-                                 text-purple-400">
-                        DAY 02
-                    </span>
+
+
+                    <!-- BUTTON -->
+
+                    <a href="./Backend/JS/Day1/Day1Task.html"
+                       class="mt-6 flex h-11 w-full
+                              items-center justify-center
+                              gap-2 rounded-lg
+                              bg-slate-900
+                              text-sm font-semibold
+                              text-white
+                              transition-all duration-300
+                              hover:bg-[#f7df1e]
+                              hover:text-slate-950">
+
+                        <span>
+                            View Task
+                        </span>
+
+                        <span class="transition-transform
+                                     duration-300
+                                     group-hover:translate-x-1">
+                            →
+                        </span>
+
+                    </a>
+
 
                 </div>
 
-
-                <!-- Content -->
-
-                <h3 class="text-xl font-bold">
-                    JavaScript Loops
-                </h3>
-
-                <p class="mt-3 min-h-[72px] text-sm 
-                          leading-6 text-slate-400">
-                    Practice looping concepts including for,
-                    while, do-while loops and pattern-based
-                    programming.
-                </p>
+            </div>
 
 
-                <!-- Topics -->
 
-                <div class="mt-5 flex flex-wrap gap-2">
+            <!-- =================================================
+                 DAY 02
+            ================================================== -->
 
-                    <span class="rounded-lg bg-slate-800 
-                                 px-3 py-1 text-xs text-slate-300">
-                        For Loop
-                    </span>
+            <div class="group relative overflow-hidden
+                        rounded-2xl border border-slate-200
+                        bg-white
+                        transition-all duration-300
+                        hover:-translate-y-1
+                        hover:border-slate-300
+                        hover:shadow-[0_20px_40px_rgba(15,23,42,0.08)]">
 
-                    <span class="rounded-lg bg-slate-800 
-                                 px-3 py-1 text-xs text-slate-300">
-                        While Loop
-                    </span>
 
-                    <span class="rounded-lg bg-slate-800 
-                                 px-3 py-1 text-xs text-slate-300">
-                        Patterns
-                    </span>
+                <!-- TOP LINE -->
 
+                <div class="h-1 w-full bg-[#f7df1e]">
                 </div>
 
 
-                <!-- Divider -->
-
-                <div class="my-6 border-t border-slate-800">
-                </div>
+                <div class="p-6">
 
 
-                <!-- Button -->
+                    <!-- DAY + ICON -->
 
-                <a href="./Backend/JS/Day2/looping.html"
-                   class="flex items-center justify-center 
-                          gap-2 rounded-xl bg-purple-600 
-                          px-5 py-3 text-sm font-semibold 
-                          text-white transition 
-                          hover:bg-purple-500 
-                          focus:outline-none 
-                          focus:ring-2 
-                          focus:ring-purple-500/50">
-
-                    View Day 2 Tasks
-
-                    <span class="transition 
-                                 group-hover:translate-x-1">
-                        →
-                    </span>
-
-                </a>
-
-            </article>
+                    <div class="flex items-center
+                                justify-between">
 
 
-            <!-- ========== DAY 3 ========== -->
+                        <div>
 
-            <article class="group relative overflow-hidden 
-                            rounded-3xl border border-slate-800 
-                            bg-slate-900 p-6 
-                            shadow-xl shadow-black/10 
-                            transition duration-300 
-                            hover:-translate-y-2 
-                            hover:border-emerald-500/50 
-                            hover:shadow-emerald-500/10">
+                            <p class="text-[11px] font-bold
+                                      uppercase tracking-[0.2em]
+                                      text-slate-400">
+                                Day
+                            </p>
 
-                <!-- Top Gradient -->
+                            <p class="mt-1 text-3xl font-black
+                                      tracking-tight text-slate-900">
+                                02
+                            </p>
 
-                <div class="absolute inset-x-0 top-0 h-1 
-                            bg-gradient-to-r 
-                            from-emerald-500 to-teal-400">
-                </div>
+                        </div>
 
 
-                <!-- Icon + Day -->
+                        <div class="flex h-14 w-14 items-center
+                                    justify-center rounded-xl
+                                    bg-[#f7df1e]
+                                    shadow-sm">
 
-                <div class="mb-6 flex items-center 
-                            justify-between">
+                            <span class="text-xl font-black text-black">
+                                JS
+                            </span>
 
-                    <div class="flex h-14 w-14 items-center 
-                                justify-center rounded-2xl 
-                                bg-emerald-500/10 text-3xl 
-                                transition duration-300 
-                                group-hover:scale-110">
-                        ⚙️
+                        </div>
+
                     </div>
 
-                    <span class="rounded-full bg-emerald-500/10 
-                                 px-3 py-1 text-xs font-semibold 
-                                 text-emerald-400">
-                        DAY 03
-                    </span>
+
+
+                    <!-- LANGUAGE -->
+
+                    <div class="mt-8">
+
+                        <h3 class="text-lg font-bold text-slate-900">
+                            JavaScript
+                        </h3>
+
+                    </div>
+
+
+
+                    <!-- BUTTON -->
+
+                    <a href="./Backend/JS/Day2/looping.html"
+                       class="mt-6 flex h-11 w-full
+                              items-center justify-center
+                              gap-2 rounded-lg
+                              bg-slate-900
+                              text-sm font-semibold
+                              text-white
+                              transition-all duration-300
+                              hover:bg-[#f7df1e]
+                              hover:text-slate-950">
+
+                        <span>
+                            View Task
+                        </span>
+
+                        <span class="transition-transform
+                                     duration-300
+                                     group-hover:translate-x-1">
+                            →
+                        </span>
+
+                    </a>
+
 
                 </div>
 
-
-                <!-- Content -->
-
-                <h3 class="text-xl font-bold">
-                    JavaScript Functions
-                </h3>
-
-                <p class="mt-3 min-h-[72px] text-sm 
-                          leading-6 text-slate-400">
-                    Learn function declarations, parameters,
-                    return values, callback functions and
-                    reusable code.
-                </p>
+            </div>
 
 
-                <!-- Topics -->
 
-                <div class="mt-5 flex flex-wrap gap-2">
+            <!-- =================================================
+                 DAY 03
+            ================================================== -->
 
-                    <span class="rounded-lg bg-slate-800 
-                                 px-3 py-1 text-xs text-slate-300">
-                        Functions
-                    </span>
+            <div class="group relative overflow-hidden
+                        rounded-2xl border border-slate-200
+                        bg-white
+                        transition-all duration-300
+                        hover:-translate-y-1
+                        hover:border-slate-300
+                        hover:shadow-[0_20px_40px_rgba(15,23,42,0.08)]">
 
-                    <span class="rounded-lg bg-slate-800 
-                                 px-3 py-1 text-xs text-slate-300">
-                        Parameters
-                    </span>
 
-                    <span class="rounded-lg bg-slate-800 
-                                 px-3 py-1 text-xs text-slate-300">
-                        Callbacks
-                    </span>
+                <!-- TOP LINE -->
 
+                <div class="h-1 w-full bg-[#f7df1e]">
                 </div>
 
 
-                <!-- Divider -->
+                <div class="p-6">
 
-                <div class="my-6 border-t border-slate-800">
+
+                    <!-- DAY + ICON -->
+
+                    <div class="flex items-center
+                                justify-between">
+
+
+                        <div>
+
+                            <p class="text-[11px] font-bold
+                                      uppercase tracking-[0.2em]
+                                      text-slate-400">
+                                Day
+                            </p>
+
+                            <p class="mt-1 text-3xl font-black
+                                      tracking-tight text-slate-900">
+                                03
+                            </p>
+
+                        </div>
+
+
+                        <div class="flex h-14 w-14 items-center
+                                    justify-center rounded-xl
+                                    bg-[#f7df1e]
+                                    shadow-sm">
+
+                            <span class="text-xl font-black text-black">
+                                JS
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- LANGUAGE -->
+
+                    <div class="mt-8">
+
+                        <h3 class="text-lg font-bold text-slate-900">
+                            JavaScript
+                        </h3>
+
+                    </div>
+
+
+
+                    <!-- BUTTON -->
+
+                    <a href="./Backend/JS/Day3/Day3Task.html"
+                       class="mt-6 flex h-11 w-full
+                              items-center justify-center
+                              gap-2 rounded-lg
+                              bg-slate-900
+                              text-sm font-semibold
+                              text-white
+                              transition-all duration-300
+                              hover:bg-[#f7df1e]
+                              hover:text-slate-950">
+
+                        <span>
+                            View Task
+                        </span>
+
+                        <span class="transition-transform
+                                     duration-300
+                                     group-hover:translate-x-1">
+                            →
+                        </span>
+
+                    </a>
+
+
                 </div>
 
-
-                <!-- Button -->
-
-                <a href="./Backend/JS/Day3/functions.html"
-                   class="flex items-center justify-center 
-                          gap-2 rounded-xl bg-emerald-600 
-                          px-5 py-3 text-sm font-semibold 
-                          text-white transition 
-                          hover:bg-emerald-500 
-                          focus:outline-none 
-                          focus:ring-2 
-                          focus:ring-emerald-500/50">
-
-                    View Day 3 Tasks
-
-                    <span class="transition 
-                                 group-hover:translate-x-1">
-                        →
-                    </span>
-
-                </a>
-
-            </article>
-
-            
+            </div>
 
         </div>
 
     </main>
 
-
-   
-
 </body>
-</html>
 
+</html>

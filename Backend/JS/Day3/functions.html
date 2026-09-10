@@ -19,17 +19,39 @@ even(4,send)  -->
 </head>
 <body>
     <script>
-        const even = (num,cb)=> {
-    if(num%2===0){
-        cb("even")
-    }else{
-        cb("odd")
-    }
+//         const even = (num,cb)=> {
+//     if(num%2===0){
+//         cb("even")
+//     }else{
+//         cb("odd")
+//     }
+// }
+// const send = (result)=>{
+//     console.log(result)
+// }
+// even(4,send)                    
+
+// for(let i=1;i<=5;i++){
+//     console.log(i*i)
+// }
+
+function createBankAccount(){
+    let balance=5000;
+  function checkBalance(){
+    console.log("AccountBalance:", balance);
+  }
+    return checkBalance;
 }
-const send = (result)=>{
-    console.log(result)
-}
-even(4,send)                                                    
+ let balance1=100000;
+
+ let account = createBankAccount();
+ console.log("OutsideBalance:",balance1);
+ account();
+
+
+
+
+
     </script>
     
 </body>
