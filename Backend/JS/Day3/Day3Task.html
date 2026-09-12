@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <script>
+  //PRIVATE BANK BALANCE
+
+
     function createBankAccount(){
     let balance=5000;
   function checkBalance(){
@@ -20,9 +23,37 @@
  account();
 
 
+// DEPOSIT USING CLOSURE
+
+
+function createAccount(){
+  let balance=1000;
+  function deposit(amount){
+    balance+=amount;
+    console.log("Deposited:",amount);
+  }
+  function getBalance(){
+    console.log("Current Balance:",balance);
+  }
+
+  return {deposit,getBalance};
+}
+let account1 = createAccount();
+account1.deposit(500)
+account1.deposit(200)
+
+
+account1.getBalance()
+
+
+
+
 
 </script>
 <body>
-    
+
+  <h2>using functions assignments</h3>
+    <br>
+  <h3>open a console tab to view the assignment</h3>
 </body>
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    //PRIVATE SALARY
+    function createEmployee(){
+        let salary = 20000;
+        return (amount)=>{
+            salary += amount;
+            return salary;
+        }
+    }
+    let updateSalary = createEmployee();
+    console.log("UpdatedSalary: "+ updateSalary(5000)); 
+    console.log("UpdatedSalary: "+ updateSalary(3000)); 
+
+    //PRODUCT STOCK
+    function createStock(){
+        let stock = 10;
+        return{
+           addStock: (quantity)=>{
+            stock += quantity;
+            return stock;
+        },
+        sellProduct: (quantity)=>{
+                stock -= quantity;
+                return stock;
+            },
+        };
+     }
+
+    let product = createStock();
+    console.log("Stock: " + product.addStock(5));
+    console.log("Stock: " +product.sellProduct(3));  
+    console.log("Stock: "+product.sellProduct(2));
+    
+</script>
+<body>
+    <h2>Using Closure functions</h2>
+    <p>open a console tab to view the assignment</p>
+    
+</body>
+</html>
