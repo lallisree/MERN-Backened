@@ -70,6 +70,40 @@ counter.increment();
 counter.decrement();
 counter.getCount();
 
+//EMPLOYEE SALARY PRIVACY
+
+function createEmployee(name, initialSalary) {
+  let salary = initialSalary;
+
+  return {
+    getName() {
+      return name;
+    },
+
+    getSalary() {
+      return salary;
+    },
+
+    increaseSalary(amount) {
+      if (amount < 0) {
+      console.log("Salary increment can't be negative");
+      }
+
+      salary += amount;
+      return salary;
+    },
+  };
+}
+let employee = createEmployee("Arun", 25000);
+
+employee.increaseSalary(5000);
+
+console.log(employee.getName());
+
+console.log(employee.getSalary());
+
+
+
 
 
 
