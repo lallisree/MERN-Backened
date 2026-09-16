@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+   //using map
+   let salaries = [15000, 20000, 25000, 30000, 35000];
+   let result = salaries.map((salary)=>{
+    return salary + 2000;
+   });
+   console.log("Original salary:",salaries);
+   console.log("Updated salary:",result);
+
+   //using filter
+   let marks = [35, 78, 42, 90, 25, 67, 55];
+   let result1=marks.filter((student)=>{
+    return student>=50;
+   });
+   console.log("Student scored above 50:",result1);
+
+   //using find
+   let products = [
+
+    { id: 101, name: "Laptop", price: 55000 },
+
+    { id: 102, name: "Mouse", price: 800 },
+
+    { id: 103, name: "Keyboard", price: 1500 },
+
+    { id: 104, name: "Monitor", price: 12000 }
+
+  ];
+    let result2=products.find((product)=>{
+    return product.id===103;
+ })
+    console.log("Complete Product:",result2);
+    console.log("Pro_name:",products[2].name);
+
+   //using reduce
+   let cart = [
+
+    { name: "Shirt", price: 1200 },
+
+    { name: "Shoes", price: 2500 },
+
+    { name: "Watch", price: 3000 },
+
+    { name: "Bag", price: 1500 }
+
+  ];
+    let total=cart.reduce((sum,carts)=>{
+        return sum + carts.price;
+    },0);
+      console.log("Total_price:",total);
+
+    //combined real-world task
+    let students = [
+
+    { id: 1, name: "Arun", mark: 85 },
+
+    { id: 2, name: "Bala", mark: 45 },
+
+    { id: 3, name: "Kumar", mark: 72 },
+
+    { id: 4, name: "Priya", mark: 95 },
+
+    { id: 5, name: "Ravi", mark: 38 }
+
+  ];
+  //map
+  let result3=students.map((student)=>{
+    return student.name;
+  });
+  console.log("StdNames:",result3);
+
+  //filter
+  let result4=students.filter((marks)=>{
+    return marks.mark>=60;
+  });
+  console.log("Std mark above 60:",result4);
+
+  //find
+  let result5=students.find((student)=>{
+    return student.id===4;
+  });
+  console.log("Std_Id:",result5);
+
+  //reduce
+  let result6=students.reduce((sum,marks)=>{
+    return sum + marks.mark;
+  },0);
+  console.log("TotalMarks:",result6);
+
+  let result7=students.reduce((sum,marks)=>{
+    return sum + marks.mark;
+  },0);
+  let average=result7 / students.length;
+  
+  console.log("AverageMarks:",average);
+
+
+</script>
+<body>
+    <h2>Using Array of objects methods</h2>
+    <h3>To check the output click the console </h3>
+</body>
+</html>
