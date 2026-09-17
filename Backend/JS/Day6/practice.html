@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //for each
+    let students = [
+
+    {
+        name: "Arun",
+        mark: 80
+    },
+
+    {
+        name: "Bala",
+        mark: 70
+    }
+
+];
+
+students.forEach((student) => {
+
+    console.log(student.name);
+
+});
+
+//filter
+let students1 = [
+
+    {
+        name: "Arun",
+        mark: 80
+    },
+
+    {
+        name: "Bala",
+        mark: 55
+    },
+
+    {
+        name: "Kumar",
+        mark: 90
+    }
+
+];
+
+let passedStudents = students1.filter((student) => {
+
+    return student.mark >= 60;
+
+});
+
+console.log(passedStudents);
+
+//find
+let students2 = [
+
+    {
+        id: 1,
+        name: "Arun"
+    },
+
+    {
+        id: 2,
+        name: "Bala"
+    }
+
+];
+
+let student = students2.find((student) => {
+
+    return student.id === 2;
+
+});
+
+console.log(student);
+
+//sort
+let names = ["Kumar", "Arun", "Bala"];
+
+names.sort();
+
+console.log(names);
+//asc
+let numbers = [50, 5, 100, 20];
+
+numbers.sort((a, b) => {
+
+    return a - b;
+
+});
+
+console.log(numbers);
+//desc
+let numbers1 = [50, 5, 100, 20];
+numbers1.sort((a, b) => {
+
+    return b - a;
+
+});
+console.log(numbers1);
+
+
+
+</script>
+<body>
+    
+</body>
+</html>
