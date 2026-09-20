@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //9.using map and filter
+    let marks = [45, 78, 32, 90, 67];
+    let result=marks.map((mark)=>{
+        return mark + 5;
+    });
+    let result1=marks.filter((mark)=>{  
+      return mark > 50;
+    });
+
+    console.log("Marks added:",result);
+    console.log("Above 50:",result1);
+
+   //10.Employee search
+    let employees = [
+
+   { id: 101, name: "Arun", salary: 25000 },
+
+   { id: 102, name: "Priya", salary: 35000 },
+
+   { id: 103, name: "Kumar", salary: 30000 }
+
+  ];
+
+    let employee = employees.find((emp => emp.id === 102));
+    console.log(employee);
+    console.log("Employee name:",employee.name);
+    console.log("Employee salary:",employee.salary);
+    
+    
+    
+    
+    
+    
+
+</script>
+<body>
+    <h2>To view the output click the console tab</h2>
+    
+</body>
+</html>
