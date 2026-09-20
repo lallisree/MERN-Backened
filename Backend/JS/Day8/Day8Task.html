@@ -34,7 +34,23 @@
     console.log("Employee name:",employee.name);
     console.log("Employee salary:",employee.salary);
     
-    
+    //11.reduce
+    let cart = [
+
+   { name: "Shirt", price: 1000 },
+
+   { name: "Shoes", price: 2500 },
+
+   { name: "Bag", price: 1500 }
+
+   ];
+
+   let total = cart.reduce((sum,carts)=>{
+    return sum + carts.price;
+   },0);
+   console.log("Total cart:",total);
+   
+
     
     
     
