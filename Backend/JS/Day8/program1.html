@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+//      const planet = ["rock", "water", "rock", "danger", "water", "rock"];
+//      let waterfound = 0;
+//      let dangerzones = 0;
+//      let safeareas = 0;
+    
+//      for (let i=0;i<planet.length;i++){
+//         console.log("rover scanning area", i + 1, ":", planet[i]);
+
+//         if( planet[i] === "water" ){
+//             waterfound++;
+//         } else if ( planet[i] === "danger" ) {
+//             dangerzones++;
+//         } else {
+//             safeareas++;
+//         }
+//     }
+        
+// console.log("\n--- Exploration Report ---");
+// console.log("Water sources found:", waterfound);
+// console.log("Danger zones found:", dangerzones);
+// console.log("Safe landing areas:", safeareas);
+     
+// if (waterfound > 0 && dangerzones <= 1) {
+//   console.log("✅ Planet is suitable for exploration!");
+// } else {
+//   console.log("❌ Planet is not safe for landing.");
+// }
+
+const planet = ["rock", "water", "rock", "danger", "water", "rock"];
+let waterFound = 0;
+let dangerZones = 0;
+let safeArea = 0;
+for(let i = 0; i<planet.length; i++){
+    console.log("rover scanning area", i + 1, ":", planet[i]);
+ 
+  if(planet[i] === "water"){
+    waterFound++;
+  }else if(planet[i]==="danger"){
+    dangerZones++;
+  }else{
+    safeArea++;
+  }
+}
+
+console.log("Water source found:",waterFound);
+console.log("danger zone found:",dangerZones);
+console.log("safe Areas:",safeArea);
+
+if(waterFound > 0 && dangerZones <= 1){
+    console.log("planet safely landed");   
+}else{
+    console.log("planet is not safely landed");
+}
+
+
+</script>
+<body>
+    
+</body>
+</html>
