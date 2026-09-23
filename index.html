@@ -1,940 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>JavaScript Tasks</title>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Tasks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 
 <body class="min-h-screen bg-[#f8fafc] text-slate-900">
 
+  <header class="border-b border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10">
+      <div class="flex h-20 items-center justify-between">
+        <div class="flex items-center gap-4">
+          <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-[#f7df1e]">
+            <span class="text-xl font-black text-black">JS</span>
+          </div>
 
-    <!-- =====================================================
-         HEADER
-    ====================================================== -->
-
-    <header class="border-b border-slate-200 bg-white">
-
-        <div class="mx-auto max-w-7xl px-6 lg:px-10">
-
-            <div class="flex h-20 items-center justify-between">
-
-
-                <!-- LEFT -->
-
-                <div class="flex items-center gap-4">
-
-                    <!-- JavaScript Icon -->
-
-                    <div class="flex h-11 w-11 items-center
-                                justify-center rounded-lg
-                                bg-[#f7df1e]">
-
-                        <span class="text-xl font-black text-black">
-                            JS
-                        </span>
-
-                    </div>
-
-
-                    <!-- Language -->
-
-                    <div>
-
-                        <h1 class="text-lg font-bold tracking-tight">
-                            JavaScript
-                        </h1>
-
-                        <p class="text-xs font-medium text-slate-400">
-                            Programming Tasks
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- RIGHT -->
-
-                <div class="hidden items-center gap-2 sm:flex">
-
-                    <span class="h-2 w-2 rounded-full bg-emerald-500">
-                    </span>
-
-                    <span class="text-xs font-medium text-slate-500">
-                        Learning
-                    </span>
-
-                </div>
-
-
-            </div>
-
+          <div>
+            <h1 class="text-lg font-bold tracking-tight">JavaScript</h1>
+            <p class="text-xs font-medium text-slate-400">Programming Tasks</p>
+          </div>
         </div>
 
-    </header>
+        <div class="hidden items-center gap-2 sm:flex">
+          <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+          <span class="text-xs font-medium text-slate-500">Learning</span>
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <main class="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+    <div class="mb-10">
+      <p class="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
+        Learning Path
+      </p>
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900">
+        Daily Tasks
+      </h2>
+    </div>
 
-
-    <!-- =====================================================
-         MAIN
-    ====================================================== -->
-
-    <main class="mx-auto max-w-7xl px-6 py-12 lg:px-10">
-
-
-        <!-- PAGE HEADING -->
-
-        <div class="mb-10">
-
-            <p class="mb-2 text-xs font-bold uppercase
-                      tracking-[0.2em] text-slate-400">
-                Learning Path
-            </p>
-
-            <h2 class="text-3xl font-bold tracking-tight
-                       text-slate-900">
-                Daily Tasks
-            </h2>
-
+    <!-- React Day 1 comes first -->
+    <section id="react" class="mb-16">
+      <div class="mb-6 flex items-end justify-between">
+        <div>
+          <p class="mb-1 text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
+            Section 01
+          </p>
+          <h2 class="text-2xl font-bold">React Tasks</h2>
         </div>
 
-
-
-        <!-- =================================================
-             TASK GRID
-        ================================================== -->
-
-        <div class="grid gap-5 sm:grid-cols-2
-                    lg:grid-cols-3 xl:grid-cols-4">
-
-
-
-            <!-- =================================================
-                 DAY 01
-            ================================================== -->
-
-            <div class="group relative overflow-hidden
-                        rounded-2xl border border-slate-200
-                        bg-white
-                        transition-all duration-300
-                        hover:-translate-y-1
-                        hover:border-slate-300
-                        hover:shadow-[0_20px_40px_rgba(15,23,42,0.08)]">
-
-
-                <!-- TOP LINE -->
-
-                <div class="h-1 w-full bg-[#f7df1e]">
-                </div>
-
-
-                <div class="p-6">
-
-
-                    <!-- DAY + ICON -->
-
-                    <div class="flex items-center
-                                justify-between">
-
-
-                        <!-- DAY NUMBER -->
-
-                        <div>
-
-                            <p class="text-[11px] font-bold
-                                      uppercase tracking-[0.2em]
-                                      text-slate-400">
-                                Day
-                            </p>
-
-                            <p class="mt-1 text-3xl font-black
-                                      tracking-tight text-slate-900">
-                                01
-                            </p>
-
-                        </div>
-
-
-                        <!-- ICON -->
-
-                        <div class="flex h-14 w-14 items-center
-                                    justify-center rounded-xl
-                                    bg-[#f7df1e]
-                                    shadow-sm">
-
-                            <span class="text-xl font-black text-black">
-                                JS
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- LANGUAGE -->
-
-                    <div class="mt-8">
-
-                        <h3 class="text-lg font-bold text-slate-900">
-                            JavaScript
-                        </h3>
-
-                    </div>
-
-
-
-                    <!-- BUTTON -->
-
-                    <a href="./Backend/JS/Day1/Day1Task.html"
-                       class="mt-6 flex h-11 w-full
-                              items-center justify-center
-                              gap-2 rounded-lg
-                              bg-slate-900
-                              text-sm font-semibold
-                              text-white
-                              transition-all duration-300
-                              hover:bg-[#f7df1e]
-                              hover:text-slate-950">
-
-                        <span>
-                            View Task
-                        </span>
-
-                        <span class="transition-transform
-                                     duration-300
-                                     group-hover:translate-x-1">
-                            →
-                        </span>
-
-                    </a>
-
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 DAY 02
-            ================================================== -->
-
-            <div class="group relative overflow-hidden
-                        rounded-2xl border border-slate-200
-                        bg-white
-                        transition-all duration-300
-                        hover:-translate-y-1
-                        hover:border-slate-300
-                        hover:shadow-[0_20px_40px_rgba(15,23,42,0.08)]">
-
-
-                <!-- TOP LINE -->
-
-                <div class="h-1 w-full bg-[#f7df1e]">
-                </div>
-
-
-                <div class="p-6">
-
-
-                    <!-- DAY + ICON -->
-
-                    <div class="flex items-center
-                                justify-between">
-
-
-                        <div>
-
-                            <p class="text-[11px] font-bold
-                                      uppercase tracking-[0.2em]
-                                      text-slate-400">
-                                Day
-                            </p>
-
-                            <p class="mt-1 text-3xl font-black
-                                      tracking-tight text-slate-900">
-                                02
-                            </p>
-
-                        </div>
-
-
-                        <div class="flex h-14 w-14 items-center
-                                    justify-center rounded-xl
-                                    bg-[#f7df1e]
-                                    shadow-sm">
-
-                            <span class="text-xl font-black text-black">
-                                JS
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- LANGUAGE -->
-
-                    <div class="mt-8">
-
-                        <h3 class="text-lg font-bold text-slate-900">
-                            JavaScript
-                        </h3>
-
-                    </div>
-
-
-
-                    <!-- BUTTON -->
-
-                    <a href="./Backend/JS/Day2/looping.html"
-                       class="mt-6 flex h-11 w-full
-                              items-center justify-center
-                              gap-2 rounded-lg
-                              bg-slate-900
-                              text-sm font-semibold
-                              text-white
-                              transition-all duration-300
-                              hover:bg-[#f7df1e]
-                              hover:text-slate-950">
-
-                        <span>
-                            View Task
-                        </span>
-
-                        <span class="transition-transform
-                                     duration-300
-                                     group-hover:translate-x-1">
-                            →
-                        </span>
-
-                    </a>
-
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-
-                 DAY 03
-            ================================================== -->
-
-            <div class="group relative overflow-hidden
-                        rounded-2xl border border-slate-200
-                        bg-white
-                        transition-all duration-300
-                        hover:-translate-y-1
-                        hover:border-slate-300
-                        hover:shadow-[0_20px_40px_rgba(15,23,42,0.08)]">
-
-
-                <!-- TOP LINE -->
-
-                <div class="h-1 w-full bg-[#f7df1e]">
-                </div>
-
-
-                <div class="p-6">
-
-
-                    <!-- DAY + ICON -->
-
-                    <div class="flex items-center
-                                justify-between">
-
-
-                        <div>
-
-                            <p class="text-[11px] font-bold
-                                      uppercase tracking-[0.2em]
-                                      text-slate-400">
-                                Day
-                            </p>
-
-                            <p class="mt-1 text-3xl font-black
-                                      tracking-tight text-slate-900">
-                                03
-                            </p>
-
-                        </div>
-
-
-                        <div class="flex h-14 w-14 items-center
-                                    justify-center rounded-xl
-                                    bg-[#f7df1e]
-                                    shadow-sm">
-
-                            <span class="text-xl font-black text-black">
-                                JS
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- LANGUAGE -->
-
-                    <div class="mt-8">
-
-                        <h3 class="text-lg font-bold text-slate-900">
-                            JavaScript
-                        </h3>
-
-                    </div>
-
-
-
-                    <!-- BUTTON -->
-
-                    <a href="./Backend/JS/Day3/Day3Task.html"
-                       class="mt-6 flex h-11 w-full
-                              items-center justify-center
-                              gap-2 rounded-lg
-                              bg-slate-900
-                              text-sm font-semibold
-                              text-white
-                              transition-all duration-300
-                              hover:bg-[#f7df1e]
-                              hover:text-slate-950">
-
-                        <span>
-                            View Task
-                        </span>
-
-                        <span class="transition-transform
-                                     duration-300
-                                     group-hover:translate-x-1">
-                            →
-                        </span>
-
-                    </a>
-
-
-                </div>
-
-            </div>
-           <!-- =================================================
-                DAY 04
-                ==============================================-->
-
-            <div class="group relative overflow-hidden
-                        rounded-2xl border border-slate-200
-                        bg-white
-                        transition-all duration-300
-                        hover:-translate-y-1
-                        hover:border-slate-300
-                        hover:shadow-[0_20px_40px_rgba(15,23,42,0.08)]">
-
-
-                <!-- TOP LINE -->
-
-                <div class="h-1 w-full bg-[#f7df1e]">
-                </div>
-
-
-                <div class="p-6">
-
-
-                    <!-- DAY + ICON -->
-
-                    <div class="flex items-center
-                                justify-between">
-
-
-                        <div>
-
-                            <p class="text-[11px] font-bold
-                                      uppercase tracking-[0.2em]
-                                      text-slate-400">
-                                Day
-                            </p>
-
-                            <p class="mt-1 text-3xl font-black
-                                      tracking-tight text-slate-900">
-                                04
-                            </p>
-
-                        </div>
-
-
-                        <div class="flex h-14 w-14 items-center
-                                    justify-center rounded-xl
-                                    bg-[#f7df1e]
-                                    shadow-sm">
-
-                            <span class="text-xl font-black text-black">
-                                JS
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- LANGUAGE -->
-
-                    <div class="mt-8">
-
-                        <h3 class="text-lg font-bold text-slate-900">
-                            JavaScript
-                        </h3>
-
-                    </div>
-
-
-
-                    <!-- BUTTON -->
-
-                    <a href="./Backend/JS/Day4/Day4Task.html"
-                       class="mt-6 flex h-11 w-full
-                              items-center justify-center
-                              gap-2 rounded-lg
-                              bg-slate-900
-                              text-sm font-semibold
-                              text-white
-                              transition-all duration-300
-                              hover:bg-[#f7df1e]
-                              hover:text-slate-950">
-
-                        <span>
-                            View Task
-                        </span>
-
-                        <span class="transition-transform
-                                     duration-300
-                                     group-hover:translate-x-1">
-                            →
-                        </span>
-
-                    </a>
-
-
-                </div>
-
-                </div>
-             <!-- =================================================
-                DAY 05
-                ==============================================-->
-                
-            <div class="group relative overflow-hidden
-                        rounded-2xl border border-slate-200
-                        bg-white
-                        transition-all duration-300
-                        hover:-translate-y-1
-                        hover:border-slate-300
-                        hover:shadow-[0_20px_40px_rgba(15,23,42,0.08)]">
-
-
-                <!-- TOP LINE -->
-
-                <div class="h-1 w-full bg-[#f7df1e]">
-                </div>
-
-
-                <div class="p-6">
-
-
-                    <!-- DAY + ICON -->
-
-                    <div class="flex items-center
-                                justify-between">
-
-
-                        <div>
-
-                            <p class="text-[11px] font-bold
-                                      uppercase tracking-[0.2em]
-                                      text-slate-400">
-                                Day
-                            </p>
-
-                            <p class="mt-1 text-3xl font-black
-                                      tracking-tight text-slate-900">
-                                05
-                            </p>
-
-                        </div>
-
-
-                        <div class="flex h-14 w-14 items-center
-                                    justify-center rounded-xl
-                                    bg-[#f7df1e]
-                                    shadow-sm">
-
-                            <span class="text-xl font-black text-black">
-                                JS
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- LANGUAGE -->
-
-                    <div class="mt-8">
-
-                        <h3 class="text-lg font-bold text-slate-900">
-                            JavaScript
-                        </h3>
-
-                    </div>
-
-
-
-                    <!-- BUTTON -->
-
-                    <a href="./Backend/JS/Day5/Day5Task.html"
-                       class="mt-6 flex h-11 w-full
-                              items-center justify-center
-                              gap-2 rounded-lg
-                              bg-slate-900
-                              text-sm font-semibold
-                              text-white
-                              transition-all duration-300
-                              hover:bg-[#f7df1e]
-                              hover:text-slate-950">
-
-                        <span>
-                            View Task
-                        </span>
-
-                        <span class="transition-transform
-                                     duration-300
-                                     group-hover:translate-x-1">
-                            →
-                        </span>
-
-                    </a>
-
-
-                </div>
-
-            </div>
-
-               <!-- =================================================
-                DAY 06
-                ==============================================-->
-            
-                        <div class="group relative overflow-hidden
-                        rounded-2xl border border-slate-200
-                        bg-white
-                        transition-all duration-300
-                        hover:-translate-y-1
-                        hover:border-slate-300
-                        hover:shadow-[0_20px_40px_rgba(15,23,42,0.08)]">
-
-
-                <!-- TOP LINE -->
-
-                <div class="h-1 w-full bg-[#f7df1e]">
-                </div>
-
-
-                <div class="p-6">
-
-
-                    <!-- DAY + ICON -->
-
-                    <div class="flex items-center
-                                justify-between">
-
-
-                        <div>
-
-                            <p class="text-[11px] font-bold
-                                      uppercase tracking-[0.2em]
-                                      text-slate-400">
-                                Day
-                            </p>
-
-                            <p class="mt-1 text-3xl font-black
-                                      tracking-tight text-slate-900">
-                                06
-                            </p>
-
-                        </div>
-
-
-                        <div class="flex h-14 w-14 items-center
-                                    justify-center rounded-xl
-                                    bg-[#f7df1e]
-                                    shadow-sm">
-
-                            <span class="text-xl font-black text-black">
-                                JS
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- LANGUAGE -->
-
-                    <div class="mt-8">
-
-                        <h3 class="text-lg font-bold text-slate-900">
-                            JavaScript
-                        </h3>
-
-                    </div>
-
-
-
-                    <!-- BUTTON -->
-
-                    <a href="./Backend/JS/Day6/Day6Task.html"
-                       class="mt-6 flex h-11 w-full
-                              items-center justify-center
-                              gap-2 rounded-lg
-                              bg-slate-900
-                              text-sm font-semibold
-                              text-white
-                              transition-all duration-300
-                              hover:bg-[#f7df1e]
-                              hover:text-slate-950">
-
-                        <span>
-                            View Task
-                        </span>
-
-                        <span class="transition-transform
-                                     duration-300
-                                     group-hover:translate-x-1">
-                            →
-                        </span>
-
-                    </a>
-
-
-                </div>
-
-            </div>
-
-               <!-- =================================================
-                DAY 07
-                ==============================================-->
-                 
-                        <div class="group relative overflow-hidden
-                        rounded-2xl border border-slate-200
-                        bg-white
-                        transition-all duration-300
-                        hover:-translate-y-1
-                        hover:border-slate-300
-                        hover:shadow-[0_20px_40px_rgba(15,23,42,0.08)]">
-
-
-                <!-- TOP LINE -->
-
-                <div class="h-1 w-full bg-[#f7df1e]">
-                </div>
-
-
-                <div class="p-6">
-
-
-                    <!-- DAY + ICON -->
-
-                    <div class="flex items-center
-                                justify-between">
-
-
-                        <div>
-
-                            <p class="text-[11px] font-bold
-                                      uppercase tracking-[0.2em]
-                                      text-slate-400">
-                                Day
-                            </p>
-
-                            <p class="mt-1 text-3xl font-black
-                                      tracking-tight text-slate-900">
-                                07
-                            </p>
-
-                        </div>
-
-
-                        <div class="flex h-14 w-14 items-center
-                                    justify-center rounded-xl
-                                    bg-[#f7df1e]
-                                    shadow-sm">
-
-                            <span class="text-xl font-black text-black">
-                                JS
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- LANGUAGE -->
-
-                    <div class="mt-8">
-
-                        <h3 class="text-lg font-bold text-slate-900">
-                            JavaScript
-                        </h3>
-
-                    </div>
-
-
-
-                    <!-- BUTTON -->
-
-                    <a href="./Backend/JS/Day7/Day7Task.html"
-                       class="mt-6 flex h-11 w-full
-                              items-center justify-center
-                              gap-2 rounded-lg
-                              bg-slate-900
-                              text-sm font-semibold
-                              text-white
-                              transition-all duration-300
-                              hover:bg-[#f7df1e]
-                              hover:text-slate-950">
-
-                        <span>
-                            View Task
-                        </span>
-
-                        <span class="transition-transform
-                                     duration-300
-                                     group-hover:translate-x-1">
-                            →
-                        </span>
-
-                    </a>
-
-
-                </div>
-
-            </div>
-
-              <!-- =================================================
-                DAY 08
-                ==============================================-->
-                    
-                        <div class="group relative overflow-hidden
-                        rounded-2xl border border-slate-200
-                        bg-white
-                        transition-all duration-300
-                        hover:-translate-y-1
-                        hover:border-slate-300
-                        hover:shadow-[0_20px_40px_rgba(15,23,42,0.08)]">
-
-
-                <!-- TOP LINE -->
-
-                <div class="h-1 w-full bg-[#f7df1e]">
-                </div>
-
-
-                <div class="p-6">
-
-
-                    <!-- DAY + ICON -->
-
-                    <div class="flex items-center
-                                justify-between">
-
-
-                        <div>
-
-                            <p class="text-[11px] font-bold
-                                      uppercase tracking-[0.2em]
-                                      text-slate-400">
-                                Day
-                            </p>
-
-                            <p class="mt-1 text-3xl font-black
-                                      tracking-tight text-slate-900">
-                                08
-                            </p>
-
-                        </div>
-
-
-                        <div class="flex h-14 w-14 items-center
-                                    justify-center rounded-xl
-                                    bg-[#f7df1e]
-                                    shadow-sm">
-
-                            <span class="text-xl font-black text-black">
-                                JS
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- LANGUAGE -->
-
-                    <div class="mt-8">
-
-                        <h3 class="text-lg font-bold text-slate-900">
-                            JavaScript
-                        </h3>
-
-                    </div>
-
-
-
-                    <!-- BUTTON -->
-
-                    <a href="./Backend/JS/Day8/Day8Task.html"
-                       class="mt-6 flex h-11 w-full
-                              items-center justify-center
-                              gap-2 rounded-lg
-                              bg-slate-900
-                              text-sm font-semibold
-                              text-white
-                              transition-all duration-300
-                              hover:bg-[#f7df1e]
-                              hover:text-slate-950">
-
-                        <span>
-                            View Task
-                        </span>
-
-                        <span class="transition-transform
-                                     duration-300
-                                     group-hover:translate-x-1">
-                            →
-                        </span>
-
-                    </a>
-
-
-                </div>
-
-            </div>
+        <span class="rounded-full bg-cyan-100 px-3 py-1 text-xs font-semibold text-cyan-900">
+          1 assignment
+        </span>
+      </div>
+
+      <div class="max-w-sm overflow-hidden rounded-2xl border border-slate-200 bg-white">
+        <div class="h-1 bg-cyan-500"></div>
+
+        <div class="p-6">
+          <p class="text-xs font-bold uppercase text-slate-400">Day</p>
+          <p class="mt-1 text-3xl font-black">01</p>
+          <h3 class="mt-6 text-lg font-bold">React</h3>
+
+          <a
+            href="http://localhost:5174/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-6 flex h-11 w-full items-center justify-center rounded-lg bg-slate-900 text-sm font-semibold text-white hover:bg-slate-700"
+          >
+            View Task →
+          </a>
         </div>
+      </div>
+    </section>
 
-    </main>
+    <!-- JavaScript tasks follow React -->
+    <section id="javascript">
+      <div class="mb-6">
+        <p class="mb-1 text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
+          Section 02
+        </p>
+        <h2 class="text-2xl font-bold">JavaScript Tasks</h2>
+      </div>
+
+      <div
+        id="javascriptCards"
+        class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+      ></div>
+    </section>
+  </main>
+
+  <script>
+    const javascriptTasks = [
+      { day: 1, link: "./Backend/JS/Day1/Day1Task.html" },
+      { day: 2, link: "./Backend/JS/Day2/looping.html" },
+      { day: 3, link: "./Backend/JS/Day3/Day3Task.html" },
+      { day: 4, link: "./Backend/JS/Day4/Day4Task.html" },
+      { day: 5, link: "./Backend/JS/Day5/Day5Task.html" },
+      { day: 6, link: "./Backend/JS/Day6/Day6Task.html" },
+      { day: 7, link: "./Backend/JS/Day7/Day7Task.html" },
+      { day: 8, link: "./Backend/JS/Day8/Day8Task.html" }
+    ];
+
+    const javascriptCards = document.getElementById("javascriptCards");
+
+    javascriptTasks.forEach((task) => {
+      const dayNumber = String(task.day).padStart(2, "0");
+
+      const card = document.createElement("div");
+      card.className =
+        "group relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_20px_40px_rgba(15,23,42,0.08)]";
+
+      card.innerHTML = `
+        <div class="h-1 w-full bg-[#f7df1e]"></div>
+
+        <div class="p-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400">
+                Day
+              </p>
+              <p class="mt-1 text-3xl font-black tracking-tight text-slate-900">
+                ${dayNumber}
+              </p>
+            </div>
+
+            <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-[#f7df1e] shadow-sm">
+              <span class="text-xl font-black text-black">JS</span>
+            </div>
+          </div>
+
+          <h3 class="mt-8 text-lg font-bold text-slate-900">
+            JavaScript
+          </h3>
+
+          <a
+            href="${task.link}"
+            class="mt-6 flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-slate-900 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#f7df1e] hover:text-slate-950"
+          >
+            <span>View Task</span>
+            <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </a>
+        </div>
+      `;
+
+      javascriptCards.appendChild(card);
+    });
+  </script>
 
 </body>
-
 </html>
