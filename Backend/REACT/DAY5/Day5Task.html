@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 30px;
+        }
+        p{
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            background-color: #f0f0f0;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+</style>
+<body>
+    <h1>1. ES6+ Features in JavaScript</h1>
+    <p>ES6 means ECMAScript 2015.<br> It introduced many new features
+       that make JavaScript code shorter, cleaner, and easier to maintain.<br> 
+       ES6 and the newer versions of JavaScript.</p>
+   <table border ="2">
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>Feature</th>
+            <th>Simple Meaning</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td> 1</td>
+            <td>let</td>
+            <td>Declares a variable that can be changed</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>const</td>
+            <td>Declares a variable that cannot be reassigned</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Arrow Function</td>
+            <td>Short way to write functions</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Template Literals</td>
+            <td>Easy way to combine strings and variables</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Destructuring</td>
+            <td>Extract values from arrays or objects</td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>Spread Operator</td>
+            <td>Expands values from an array or object</td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>Rest Operator</td>
+            <td>Collects multiple values into one variable</td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td>Default Parameters</td>
+            <td>Gives default values to function parameters</td>
+        </tr>
+
+        <tr>
+            <td>9</td>
+            <td>Classes</td>
+            <td>Creates objects using class-based syntax</td>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>Modules</td>
+            <td>Allows code to be separated using import and export</td>
+        </tr>
+
+        <tr>
+            <td>11</td>
+            <td>Promises</td>
+            <td>Handles asynchronous operations</td>
+        </tr>
+
+        <tr>
+            <td>12</td>
+            <td>for...of</td>
+            <td>Loops through iterable values</td>
+        </tr>
+
+        <tr>
+            <td>13</td>
+            <td>Map and Set</td>
+            <td>New data structures</td>
+        </tr>
+
+        <tr>
+            <td>14</td>
+            <td>Enhanced Object Literals</td>
+            <td>Easier way to create objects</td>
+        </tr>
+
+        <tr>
+            <td>15</td>
+            <td>async/await</td>
+            <td>Easier way to work with asynchronous code</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+   <body>
+
+    <h1>2. Difference Between var, let and const</h1>
+    <p>var, let, and const are all used to declare variables in JavaScript, <br>
+   but they differ mainly in scope, reassignment, and redeclaration.</p>
+    
+    <table>
+
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>var</th>
+                <th>let</th>
+                <th>const</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Definition</td>
+
+                <td>
+                    <code>var</code> declares a variable that can be<br>
+                    changed and redeclared.
+                </td>
+
+                <td>
+                    <code>let</code> declares a variable whose value can<br>
+                    be changed but cannot be redeclared in the same scope.
+                </td>
+
+                <td>
+                    <code>const</code> declares a variable whose value<br>
+                    cannot be reassigned or redeclared.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Scope</td>
+                <td>Function scope</td>
+                <td>Block scope</td>
+                <td>Block scope</td>
+            </tr>
+
+            <tr>
+                <td>Reassignment</td>
+                <td>✅ Allowed</td>
+                <td>✅ Allowed</td>
+                <td>❌ Not allowed</td>
+            </tr>
+
+            <tr>
+                <td>Redeclaration</td>
+                <td>✅ Allowed</td>
+                <td>❌ Not allowed</td>
+                <td>❌ Not allowed</td>
+            </tr>
+
+            <tr>
+                <td>Introduced</td>
+                <td>Older JavaScript</td>
+                <td>ES6</td>
+                <td>ES6</td>
+            </tr>
+
+            <tr>
+                <td>Example</td>
+
+                <td>
+                    <code>var x = 10;</code>
+                </td>
+
+                <td>
+                    <code>let x = 10;</code>
+                </td>
+
+                <td>
+                    <code>const x = 10;</code>
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <hr>
+
+     <h1>3. Difference Between JavaScript DOM and React</h1>
+     <p>JavaScript DOM is a browser API that allows JavaScript to access and modify
+         HTML elements, while React is a JavaScript library that <br>
+         helps developers build user interfaces using reusable components and 
+         manages UI updates through its rendering system.</p>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>JavaScript DOM</th>
+                <th>React</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Definition</td>
+
+                <td>
+                    DOM is a browser-provided representation of an HTML
+                    document that JavaScript can access and modify.
+                </td>
+
+                <td>
+                    React is a JavaScript library used to build user
+                    interfaces using components.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Full Form</td>
+
+                <td>
+                    Document Object Model
+                </td>
+
+                <td>
+                    React is not an abbreviation.
+                </td>
+            </tr>
+
+            <tr>
+                <td>How It Works</td>
+
+                <td>
+                    Directly accesses and changes HTML elements in the DOM.
+                </td>
+
+                <td>
+                    Updates the UI through React's rendering system and
+                    then applies necessary changes to the DOM.
+                </td>
+            </tr>
+
+            <tr>
+                <td>UI Structure</td>
+
+                <td>
+                    Usually works directly with HTML elements.
+                </td>
+
+                <td>
+                    Uses reusable components.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Updating UI</td>
+
+                <td>
+                    Developer manually selects and modifies elements.
+                </td>
+
+                <td>
+                    UI updates when component state or props change.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Code Style</td>
+
+                <td>
+                    Uses DOM methods such as
+                    <code>getElementById()</code> and
+                    <code>querySelector()</code>.
+                </td>
+
+                <td>
+                    Uses JSX, components, props, and state.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Reusability</td>
+
+                <td>
+                    Reusability must be organized manually.
+                </td>
+
+                <td>
+                    Components are designed for reuse.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Example</td>
+
+                <td>
+                    <code>document.getElementById("title")</code>
+                </td>
+
+                <td>
+                    <code>&lt;Title /&gt;</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Best Suited For</td>
+
+                <td>
+                    Small or simple DOM-based interactions.
+                </td>
+
+                <td>
+                    Large and interactive user interfaces.
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <hr>
+     <h1>4. Difference Between JavaScript, React, and Angular</h1>
+     <p>JavaScript is a programming language,
+         React is a JavaScript library for building user interfaces,<br>
+          and Angular is a TypeScript-based framework for
+           building complete web applications.</p>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>JavaScript</th>
+                <th>React</th>
+                <th>Angular</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Definition</td>
+
+                <td>
+                    JavaScript is a programming language used to create
+                    dynamic and interactive web applications.
+                </td>
+
+                <td>
+                    React is a JavaScript library for building user interfaces.
+                </td>
+
+                <td>
+                    Angular is a TypeScript-based framework for building
+                    web applications.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Type</td>
+
+                <td>Programming Language</td>
+
+                <td>Library</td>
+
+                <td>Framework</td>
+            </tr>
+
+            <tr>
+                <td>Developed By</td>
+
+                <td>
+                    ECMA standard; originally created at Netscape
+                </td>
+
+                <td>
+                    Meta (Facebook)
+                </td>
+
+                <td>
+                    Google
+                </td>
+            </tr>
+
+            <tr>
+                <td>Language</td>
+
+                <td>JavaScript</td>
+
+                <td>JavaScript / JSX</td>
+
+                <td>TypeScript</td>
+            </tr>
+
+            <tr>
+                <td>UI Structure</td>
+
+                <td>
+                    Uses HTML, CSS, and JavaScript
+                </td>
+
+                <td>
+                    Uses reusable components
+                </td>
+
+                <td>
+                    Uses components
+                </td>
+            </tr>
+
+            <tr>
+                <td>DOM Handling</td>
+
+                <td>
+                    Developer can directly manipulate the DOM
+                </td>
+
+                <td>
+                    Uses React's rendering system to update the DOM
+                </td>
+
+                <td>
+                    Uses Angular's rendering system to update the DOM
+                </td>
+            </tr>
+
+            <tr>
+                <td>Data Handling</td>
+
+                <td>
+                    Developer manages it manually
+                </td>
+
+                <td>
+                    Uses props and state
+                </td>
+
+                <td>
+                    Uses components, services, and data binding
+                </td>
+            </tr>
+
+            <tr>
+                <td>Routing</td>
+
+                <td>
+                    Usually requires a separate library
+                </td>
+
+                <td>
+                    Usually uses a separate routing library
+                </td>
+
+                <td>
+                    Routing is provided as part of Angular
+                </td>
+            </tr>
+
+            <tr>
+                <td>Forms</td>
+
+                <td>
+                    Developer handles form logic
+                </td>
+
+                <td>
+                    Provides form approaches through the React ecosystem
+                </td>
+
+                <td>
+                    Provides built-in form features
+                </td>
+            </tr>
+
+            <tr>
+                <td>Reusability</td>
+
+                <td>
+                    Functions and objects can be reused
+                </td>
+
+                <td>
+                    Highly reusable components
+                </td>
+
+                <td>
+                    Reusable components and services
+                </td>
+            </tr>
+
+            <tr>
+                <td>Learning</td>
+
+                <td>
+                    Basic to advanced JavaScript concepts
+                </td>
+
+                <td>
+                    Requires JavaScript + React concepts
+                </td>
+
+                <td>
+                    Requires TypeScript + Angular concepts
+                </td>
+            </tr>
+
+            <tr>
+                <td>Example</td>
+
+                <td>
+                    <code>document.getElementById("title")</code>
+                </td>
+
+                <td>
+                    <code>&lt;UserCard /&gt;</code>
+                </td>
+
+                <td>
+                    <code>&lt;app-user-card&gt;&lt;/app-user-card&gt;</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Common Use</td>
+
+                <td>
+                    Websites, web apps, scripts, server-side applications
+                </td>
+
+                <td>
+                    Interactive user interfaces and web applications
+                </td>
+
+                <td>
+                    Structured, large-scale web applications
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    <hr>
+     <h1>5. If you want to build a car, what properties and methods will you use</h1>
+    
+    <p>Let me take a real-life example of a car. 
+        A car has some characteristics, such as its brand, color, model, and speed.<br>       In JavaScript, we call these characteristics properties.
+      A car can also perform actions like starting, stopping,<br>
+     accelerating, and braking. In JavaScript, we call these actions methods.
+      So, properties describe what an object has,<br>
+         and methods describe what an object does.</p><br>
+
+         <h2>Properties</h2>
+
+    <h3>Definition:  Properties are the characteristics or information of an object.</h3>
+    <h3>For a car, properties can be:</h3>
+
+    <ul>
+        <li><code>brand</code> → Toyota</li>
+        <li><code>color</code> → Black</li>
+        <li><code>model</code> → Camry</li>
+        <li><code>speed</code> → 100</li>
+        <li><code>fuel</code> → 50</li>
+    </ul>
+
+    <h4>You can say:</h4>
+
+    <blockquote>
+        <strong>
+            “For example, the car has a brand, color, model, speed, and fuel.
+            These are properties because they describe the car.”
+        </strong>
+    </blockquote>
+
+
+    <h2>Methods</h2>
+
+    <h3>Definition:   Methods are the actions or behaviors that an object can perform.</h3>
+
+
+    <h4>For a car, methods can be:</h4>
+
+    <ul>
+        <li><code>start()</code> → Starts the car</li>
+        <li><code>stop()</code> → Stops the car</li>
+        <li><code>accelerate()</code> → Increases speed</li>
+        <li><code>brake()</code> → Decreases speed</li>
+        <li><code>honk()</code> → Sounds the horn</li>
+    </ul>
+
+</body>
+</html>
