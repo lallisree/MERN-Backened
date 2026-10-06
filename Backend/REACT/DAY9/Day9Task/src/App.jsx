@@ -1,5 +1,5 @@
 import React from 'react'
-import Object from './components/object'
+import Object from './components/Object'
 import IncDecRes from './components/IncDecRes'
 import ShowHide from './components/ShowHide'
 import Toggle from './components/Toggle'
