@@ -128,3 +128,48 @@
 
 // export default App
 
+import React from 'react'
+import {useState} from "react"
+
+const App = () => {
+  const [name, setName] = useState("Lalli");
+  const [inputName, setInputName] = useState("Lilly");
+  const handleClick = () => {
+    setName(inputName);
+  };
+  return (
+    <div>
+      <h2>{name}</h2>
+
+      <input
+        type="text"
+        value={inputName}
+        onChange={(e) => setInputName(e.target.value)}
+        placeholder="Enter your name"
+      />
+      <button onClick={handleClick}> Change Name </button>
+    </div>
+  );
+}
+
+export default App
+
+// import { useState } from "react";
+
+// function App() {
+//   const [name, setName] = useState("Lalli");
+
+//   return (
+//     <div>
+//       <input
+//         type="text"
+//         value={name}
+//         onChange={(e) => setName(e.target.value)}
+//       />
+
+//       <h2>{name}</h2>
+//     </div>
+//   );
+// }
+
+// export default App;
