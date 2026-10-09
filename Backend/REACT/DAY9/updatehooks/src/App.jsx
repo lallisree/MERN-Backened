@@ -50,26 +50,26 @@
 
 /**using to check boolean in useState**/
 
-// import { useState } from "react"
+import { useState } from "react"
 
-// const App = () => {
+const App = () => {
 
-//    let [a,setA] = useState(true)
+   let [a,setA] = useState(true)
 
-//    const handleClick = () =>{
-//     setA(!a)
-//    }
+   const handleClick = () =>{
+    setA(!a)
+   }
 
-//   return (
+  return (
       
-//     <div>
-//       <h1>{a?"React":"Not React"}</h1>
-//       <button onClick={handleClick}>Click</button>
-//     </div>
-//   )
-// }
+    <div>
+      <h1>{a?"React":"Not React"}</h1>
+      <button onClick={handleClick}>Click</button>
+    </div>
+  )
+}
 
-// export default App
+// // export default App
 
 /**using array in useState**/
 
@@ -128,31 +128,31 @@
 
 // export default App
 
-import React from 'react'
-import {useState} from "react"
+// import React from 'react'
+// import {useState} from "react"
 
-const App = () => {
-  const [name, setName] = useState("Lalli");
-  const [inputName, setInputName] = useState("Lilly");
-  const handleClick = () => {
-    setName(inputName);
-  };
-  return (
-    <div>
-      <h2>{name}</h2>
+// const App = () => {
+//   const [name, setName] = useState("Lalli");
+//   const [inputName, setInputName] = useState("Lilly");
+//   const handleClick = () => {
+//     setName(inputName);
+//   };
+//   return (
+//     <div>
+//       <h2>{name}</h2>
 
-      <input
-        type="text"
-        value={inputName}
-        onChange={(e) => setInputName(e.target.value)}
-        placeholder="Enter your name"
-      />
-      <button onClick={handleClick}> Change Name </button>
-    </div>
-  );
-}
+//       <input
+//         type="text"
+//         value={inputName}
+//         onChange={(e) => setInputName(e.target.value)}
+//         placeholder="Enter your name"
+//       />
+//       <button onClick={handleClick}> Change Name </button>
+//     </div>
+//   );
+// }
 
-export default App
+// export default App
 
 // import { useState } from "react";
 
