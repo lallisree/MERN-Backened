@@ -5,8 +5,7 @@ import Arr from './components/Arr'
 const App = () => {
   return (
     <div>
-      {/* <Array/> */}
-
+       
       <Arr/>
     </div>
   )
