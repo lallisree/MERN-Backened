@@ -1,5 +1,7 @@
 import React from 'react'
 import Employe from './components/Employe'
+import Product from './components/Product'
+// import Course from './components/Course'
 // import Practice from './components/Practice'
 
 const App = () => {
@@ -8,6 +10,9 @@ const App = () => {
       {/* <Practice/> */}
       <Employe/>
       <hr/>
+      <Product/>
+      <hr/>
+      {/* <Course/> */}
     </div>
   )
 }

@@ -6,6 +6,7 @@ const Employe = () => {
     const [empdetails,setEmpDetails] = useState([]);
     const [empEdit,setEmpEdit] = useState(null);
 
+    //handle input changes
     const handleChange = (e) => {
 
     const { name, value } = e.target;
@@ -14,6 +15,7 @@ const Employe = () => {
 
     }
 
+    //Add employe
     const handleAdd = () => {
 
       if (
@@ -28,11 +30,13 @@ const Employe = () => {
    setEmploye({ name: "", department: "", salary: "" });
     };
 
+    //Edit employe
     const handleEdit = (index) => {
       setEmploye({...empdetails[index]});
       setEmpEdit(index);
     }
 
+    //Delete employe
     const handleDelete = (index) => {
 
       const copy = empdetails.filter((emp, i) => i !== index);

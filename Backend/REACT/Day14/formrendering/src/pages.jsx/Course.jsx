@@ -8,8 +8,7 @@ const Course = () => {
   const handleChange = (e) =>{
 
     const value = e.target.value;
-
-    setCourseName(value)
+     setCourseName(value)
 
   };
 

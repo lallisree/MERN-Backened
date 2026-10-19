@@ -58,7 +58,7 @@ const ArrObjDel = () => {
           <p>{e.age}</p>
            <button onClick={()=>handleupdate(e.username)}>Update</button>
         </div>
-      ))}
+      ))} 
 
       <button onClick={handleClick}>Click to Add</button>
      
