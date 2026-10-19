@@ -11,7 +11,7 @@ const ArrObjDel = () => {
 
     setObjArr(copy)
 
-    // setObjArr((p)=>[...p,{username:"Node new",age:90}])
+    // setObjArr((p)=>[...p,{username:"Node ne w",age:90}])
 
     // const copy = [...objarr]
 
@@ -36,18 +36,18 @@ const ArrObjDel = () => {
   }
 
 
-//   const deletHandleing = ()=>{
+  const deletHandleing = ()=>{
 
-//     const copy = [...objarr] 
+    const copy = [...objarr] 
 
-//     const deleteData = copy.filter((e,i)=>i!=2)
+    const deleteData = copy.filter((e,i)=>i!=2)
 
-//     console.log(deleteData);
+    console.log(deleteData);
     
 
-//     setObjArr(deleteData)
+    setObjArr(deleteData)
 
-//   }
+  }
 
   return (
     <>
@@ -61,8 +61,8 @@ const ArrObjDel = () => {
       ))}
 
       <button onClick={handleClick}>Click to Add</button>
-{/*      
-      <button onClick={deletHandleing}>Delete</button> */}
+     
+      <button onClick={deletHandleing}>Delete</button>
     </div>
     </>
   )

@@ -67,7 +67,7 @@ const App = () => {
       <button onClick={handleClick}>Click</button>
     </div>
   )
-}
+} 
 
 // // export default App
 

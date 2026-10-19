@@ -1,10 +1,15 @@
 import React from 'react'
-import Form from './components/Form'
+// import Form from './components/Form'
+import Toggle from './components/Toggle'
+import Like from './components/Like'
 
 const App = () => {
   return (
     <div>
-      <Form/>
+      {/* <Form/> */}
+      <Toggle/>
+      <hr></hr>
+      <Like/>
       
     </div>
   )

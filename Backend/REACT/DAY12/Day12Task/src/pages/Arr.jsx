@@ -25,17 +25,7 @@ const Arr = () => {
             <h1 key={i + 1}>{e}</h1>
           ))}
         </div>
-        <div>
-          <button
-            className="p-2 mx-auto block text-amber-50 bg-green-500 rounded-4xl"
-            onClick={addReact}
-          >
-            Add
-          </button>
-          <button
-            className="p-2 mx-auto block gap-15 bg-green-500 rounded-4xl"
-            onClick={updateCss}
-          >
+        <div> 
             Update
           </button>
         </div>
