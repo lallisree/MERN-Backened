@@ -1,6 +1,7 @@
 // import React, { useEffect, useState } from 'react'
 
-import Practice from "./assets/components/Practice"
+import Multiply from "./assets/components/Multiply"
+
 
 // const App = () => {
 //   const [data,setData] = useState([])
@@ -28,12 +29,11 @@ import Practice from "./assets/components/Practice"
 
 // export default App
 
-import Practice from "./assets/components/Practice"
+
 const App = () => {
   return (
     <div>
-
-<Practice/>
+      <Multiply/>
     </div>
   )
 }
