@@ -3,9 +3,11 @@ import Datacontext from '../context/Datacontext'
 
 const Navbar = () => {
     const {name} = useContext(Datacontext)
+    const {role} = useContext(Datacontext)
   return (
     <div>
       <h1>Name: {name}</h1>
+      <h1>Role: {role}</h1>
     </div>
   )
 }
